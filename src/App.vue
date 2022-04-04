@@ -26,6 +26,10 @@
             }
             </style>
 <template>
+<div>
+<head>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
 
   <div id="app">
            
@@ -34,6 +38,7 @@
        <img style="height:50px;display:flex;margin-left:110px;margin-top:-80px;" src="header.png">
        <button  style="margin-left:980px;visibility: hidden;height:50px;border:4px solid white;border-radius:20px;width:200px;background-color:rgb(163, 156, 154);color:rgb(0, 0, 0);" id="cartbtn" @click="showCheckout()">
         {{ this.cart.length }}
+         <span class="fas fa-cart-plus"></span>
         Shopping cart
       </button>
     </header>
@@ -48,6 +53,7 @@
      </div>
     </main>
   </div>
+   </div>
 </template>
 <script>
 
